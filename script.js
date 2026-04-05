@@ -1,24 +1,17 @@
 const makeChange = (c) => {
   // your name here
-	let penny = 1, nickel = 5, dime = 10, quarter = 25;
-	let p = 0, n = 0, d = 0, q = 0;
-	while(c > 0){
-		if(c >= quarter){
-			q++;
-			c -= quarter;
-		}else if(c >= dime){
-			d++;
-			c -= dime;
-		}else if(c >= nickel){
-			n++;
-			c -= nickel;
-		}else{
-			p++;
-			c -= penny;
-		}
-	}
-	let ans = {q,d,n,p};
-	return ans;
+  let q = Math.floor(c / 25);
+  c = c % 25;
+
+  let d = Math.floor(c / 10);
+  c = c % 10;
+
+  let n = Math.floor(c / 5);
+  c = c % 5;
+
+  let p = c;
+
+  return { q, d, n, p };
 };
 
 Do not the change the code below
