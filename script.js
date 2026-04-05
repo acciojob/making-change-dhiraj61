@@ -17,7 +17,7 @@ const makeChange = (c) => {
 			c -= penny;
 		}
 	}
-	let ans = {"q" : q, "d" : d, "n" : n, "p" : p};
+	let ans = {q,d,n,p};
 	return ans;
 };
 
