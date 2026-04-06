@@ -15,6 +15,6 @@ const makeChange = (c) => {
   return { q: q, d: d, n: n, p: p };
 };
 
-Do not the change the code below
+// Do not the change the code below
 const c = prompt("Enter c: ");
 alert(JSON.stringify(makeChange(c)));
