@@ -1,5 +1,6 @@
 const makeChange = (c) => {
-  // your name here
+  c = Number(c);
+
   let q = Math.floor(c / 25);
   c = c % 25;
 
@@ -11,7 +12,7 @@ const makeChange = (c) => {
 
   let p = c;
 
-  return { "q":q, "d":d, "n":n, "p":p };
+  return { q: q, d: d, n: n, p: p };
 };
 
 Do not the change the code below
