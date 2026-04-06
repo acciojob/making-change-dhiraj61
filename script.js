@@ -11,7 +11,7 @@ const makeChange = (c) => {
 
   let p = c;
 
-  return { q, d, n, p };
+  return { "q":q, "d":d, "n":n, "p":p };
 };
 
 Do not the change the code below
